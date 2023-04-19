@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View,TouchableOpacity, Image } from 'react-native';
-import React from 'react';
-import { COLORS } from '../constants';
+import { StyleSheet, Text, View,TouchableOpacity, Image } from 'react-native'
+import React from 'react'
+
+import { COLORS } from '../constants'
 
 const PlaceItem = ({title, image, address, onSelect}) => {
 console.log(title)
@@ -12,10 +13,10 @@ console.log(title)
             <Text style={styles.address}>{address}</Text>
         </View>
     </TouchableOpacity>
-  );
-};
+  )
+}
 
-export default PlaceItem;
+export default PlaceItem
 
 const styles = StyleSheet.create({
     placeItem: {
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 35,
-        backgroundColor: COLORS.SUNNY
+        backgroundColor: COLORS.PEACH_PUFF
     },
     info:{
         marginLeft: 25,
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start'
     },
     title:{
-        color: COLORS.OCRE,
+        color: COLORS.BLUSH,
         fontSize: 18,
         marginBottom: 6
     },
@@ -47,4 +48,4 @@ const styles = StyleSheet.create({
         color: '#777',
         fontSize: 16,
     }
-});
+})

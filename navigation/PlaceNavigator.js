@@ -18,9 +18,9 @@ const PlaceNavigator = () => (
         initialRoute='Direcciones'
         screenOptions={{
             headerStyle: {
-                backgroundColor: Platform.OS === 'android' ? COLORS.CAQUI : '',
+                backgroundColor: Platform.OS === 'android' ? COLORS.DARK_SIENNA : '',
             },
-            headerTintColor: Platform.OS === 'android' ? 'white' : COLORS.CAQUI,
+            headerTintColor: Platform.OS === 'android' ? 'white' : COLORS.DARK_SIENNA,
             headerTitleStyle: {
                 fontWeight: 'bold',
             }
@@ -33,7 +33,7 @@ const PlaceNavigator = () => (
                 title: 'Direcciones',
                 headerRight: () => (
                     <TouchableOpacity onPress={() => navigation.navigate('Nuevo')}>
-                        <Ionicons name="md-add" color={Platform.OS === 'android' ? 'white' : COLORS.CAQUI} size={23} />
+                        <Ionicons name="md-add" color={Platform.OS === 'android' ? 'white' : COLORS.DARK_SIENNA} size={23} />
                     </TouchableOpacity>
                 )
             })}
